@@ -25,13 +25,21 @@ public class TestArregloDinamico {
 
 	@Test
 	public void testArregloDinamico() {
-		// TODO
+		// TODO Listo
+		setUp1();
+		
+		assertEquals( "El tamaño del arreglo es incorrecto", 100, arreglo.darTamano());
 	}
 
 	@Test
 	public void testDarElemento() {
 		setUp2();
-		// TODO
+		// TODO Listo.
+		
+		
+		assertNotNull( "No se encontro el elemento", arreglo.darElemento(0));
+		assertEquals( "El dato entregado es incorrecto", "0", arreglo.darElemento(0));
+		
 	}
 
 }

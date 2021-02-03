@@ -30,25 +30,36 @@ public class TestModelo {
 
 	@Test
 	public void testDarTamano() {
-		// TODO
+		// TODO Listo
+		setUp2();
+		assertEquals(100, modelo.darTamano());
 	}
 
 	@Test
 	public void testAgregar() {
-		// TODO Completar la prueba
+		// TODO Completar la prueba Listo
+		setUp1();
+		
+		modelo.agregar("hola");
+		assertEquals( "hola", modelo.buscar("hola"));
 	}
 
 	@Test
 	public void testBuscar() {
 		setUp2();
-		// TODO Completar la prueba
+		// TODO Completar la prueba Listo
+		
+		assertEquals("0", modelo.buscar("0"));
+		
 	}
 
 	@Test
 	public void testEliminar() {
 		setUp2();
-		// TODO Completar la prueba
-		
+		// TODO Completar la prueba Listo
+		modelo.eliminar("99");
+		modelo.eliminar("49");
+		assertEquals(98, modelo.darTamano());
 	}
 
 }

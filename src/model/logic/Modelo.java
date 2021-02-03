@@ -69,4 +69,8 @@ public class Modelo {
 	}
 
 
+	public String darElemento( int dato)
+	{
+		return datos.darElemento(dato);
+	}
 }
